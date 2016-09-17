@@ -1,9 +1,9 @@
 import React from 'react';
-import Navbar from './navbar.js';
+import MyNavbar from './navbar.js';
 
 class App extends React.Component {
     render() {
-        return <Navbar/>
+        return <MyNavbar/>
     }
 }
 
