@@ -21500,6 +21500,10 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _reactDom = __webpack_require__(34);
+
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
 	var _reactBootstrap = __webpack_require__(174);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -21510,30 +21514,81 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var Navbar = function (_React$Component) {
-	    _inherits(Navbar, _React$Component);
+	var MyNavbar = function (_React$Component) {
+	    _inherits(MyNavbar, _React$Component);
 
-	    function Navbar() {
-	        _classCallCheck(this, Navbar);
+	    function MyNavbar() {
+	        _classCallCheck(this, MyNavbar);
 
-	        return _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).apply(this, arguments));
+	        return _possibleConstructorReturn(this, (MyNavbar.__proto__ || Object.getPrototypeOf(MyNavbar)).apply(this, arguments));
 	    }
 
-	    _createClass(Navbar, [{
+	    _createClass(MyNavbar, [{
 	        key: 'render',
 	        value: function render() {
 	            return _react2.default.createElement(
-	                'div',
+	                _reactBootstrap.Navbar,
 	                null,
-	                'Navbar'
+	                _react2.default.createElement(
+	                    _reactBootstrap.Navbar.Header,
+	                    null,
+	                    _react2.default.createElement(
+	                        _reactBootstrap.Navbar.Brand,
+	                        null,
+	                        _react2.default.createElement(
+	                            'a',
+	                            { href: '#' },
+	                            'React-Bootstrap'
+	                        )
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    _reactBootstrap.Nav,
+	                    null,
+	                    _react2.default.createElement(
+	                        _reactBootstrap.NavItem,
+	                        { eventKey: 1, href: '#' },
+	                        'Link'
+	                    ),
+	                    _react2.default.createElement(
+	                        _reactBootstrap.NavItem,
+	                        { eventKey: 2, href: '#' },
+	                        'Link'
+	                    ),
+	                    _react2.default.createElement(
+	                        _reactBootstrap.NavDropdown,
+	                        { eventKey: 3, title: 'Dropdown', id: 'basic-nav-dropdown' },
+	                        _react2.default.createElement(
+	                            _reactBootstrap.MenuItem,
+	                            { eventKey: 3.1 },
+	                            'Action'
+	                        ),
+	                        _react2.default.createElement(
+	                            _reactBootstrap.MenuItem,
+	                            { eventKey: 3.2 },
+	                            'Another action'
+	                        ),
+	                        _react2.default.createElement(
+	                            _reactBootstrap.MenuItem,
+	                            { eventKey: 3.3 },
+	                            'Something else here'
+	                        ),
+	                        _react2.default.createElement(_reactBootstrap.MenuItem, { divider: true }),
+	                        _react2.default.createElement(
+	                            _reactBootstrap.MenuItem,
+	                            { eventKey: 3.3 },
+	                            'Separated link'
+	                        )
+	                    )
+	                )
 	            );
 	        }
 	    }]);
 
-	    return Navbar;
+	    return MyNavbar;
 	}(_react2.default.Component);
 
-	exports.default = Navbar;
+	exports.default = MyNavbar;
 
 /***/ },
 /* 174 */
@@ -40363,7 +40418,7 @@
 /* 427 */
 /***/ function(module, exports) {
 
-	
+	/* app.css */
 
 /***/ }
 /******/ ]);
