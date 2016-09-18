@@ -1,14 +1,12 @@
 import React from 'react';
-import MyNavbar from './navbar.js';
+import Navigation from './navigation.js';
 
 export default class App extends React.Component {
     render() {
         return (
             <div className="exterior">
-                <MyNavbar/>
+                <Navigation/>
             </div>
         )
     }
 }
-
-// export default App;
