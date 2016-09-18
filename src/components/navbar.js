@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Navbar } from 'react-bootstrap';
-import { Nav } from 'react-bootstrap';
-import { NavItem } from 'react-bootstrap';
-import { NavDropdown } from 'react-bootstrap';
-import { MenuItem } from 'react-bootstrap';
+import {
+    Nav,
+    Navbar,
+    NavItem,
+    NavDropdown,
+    MenuItem
+ } from 'react-bootstrap';
 
 class MyNavbar extends React.Component {
     render() {
@@ -12,7 +14,7 @@ class MyNavbar extends React.Component {
             <Navbar>
                 <Navbar.Header>
                 <Navbar.Brand>
-                    <a href="#">React-Bootstrap</a>
+                    <a href="#">Ali Yeysides - Reverse Engineer</a>
                 </Navbar.Brand>
                 </Navbar.Header>
                 <Nav>
@@ -28,7 +30,7 @@ class MyNavbar extends React.Component {
                 </Nav>
             </Navbar>
         )
-
     }
 }
+
 export default MyNavbar;
