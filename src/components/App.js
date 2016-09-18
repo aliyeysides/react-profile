@@ -1,10 +1,14 @@
 import React from 'react';
 import MyNavbar from './navbar.js';
 
-class App extends React.Component {
+export default class App extends React.Component {
     render() {
-        return <MyNavbar/>
+        return (
+            <div className="exterior">
+                <MyNavbar/>
+            </div>
+        )
     }
 }
 
-export default App;
+// export default App;
