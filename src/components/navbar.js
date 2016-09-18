@@ -14,19 +14,13 @@ class MyNavbar extends React.Component {
             <Navbar>
                 <Navbar.Header>
                 <Navbar.Brand>
-                    <a href="#">Ali Yeysides - Reverse Engineer</a>
+                    <a href="#">ALI YEYSIDES ¬ RESEARCH + DEVELOPMENT</a>
                 </Navbar.Brand>
                 </Navbar.Header>
-                <Nav>
-                <NavItem eventKey={1} href="#">Link</NavItem>
-                <NavItem eventKey={2} href="#">Link</NavItem>
-                <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
-                    <MenuItem eventKey={3.1}>Action</MenuItem>
-                    <MenuItem eventKey={3.2}>Another action</MenuItem>
-                    <MenuItem eventKey={3.3}>Something else here</MenuItem>
-                    <MenuItem divider />
-                    <MenuItem eventKey={3.3}>Separated link</MenuItem>
-                </NavDropdown>
+                <Nav pullRight>
+                    <NavItem eventKey={1} href="https://github.com/aliyeysides" target="_blank">GITHUB</NavItem>
+                    <NavItem eventKey={1} href="https://www.linkedin.com/in/ali-yeysides-b099b266" target="_blank">LINKEDIN</NavItem>
+                    <NavItem eventKey={2} href="mailto:ali.yeysides@gmail.com">EMAIL</NavItem>
                 </Nav>
             </Navbar>
         )
