@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import SiestaSuite from './portfolio/SiestaSuite.js';
+import Pinpoint from './portfolio/Pinpoint.js';
 import {
     Grid,
     Row,
@@ -15,6 +16,7 @@ export default class ProjectView extends React.Component {
             <Grid>
                 <Col xs={12}>
                    <SiestaSuite />
+                   <Pinpoint />
                 </Col>
             </Grid>
         )
